@@ -3,16 +3,17 @@
     <title>Faisal Ibrahim</title>
     <style type="text/css">
     #Body{
-        background-image: radial-gradient(Black,white);
+        background-image: linear-gradient(Black,white);
         background-repeat:no-repeat;
         background-attachment:fixed;
         background-size:cover;
     }
     #Header{
-        text-align: center;
         font-size: 90px;
-        color:black; 
-
+        text-align: center;
+        color:blanchedalmond;
+        
+        
     }
     .PageLink{
         font-family: Georgia;
@@ -21,26 +22,28 @@
     }
     #LinkHome{
         text-decoration: none;
-        color:black;
+        color:blanchedalmond;
     }
     #LinkAbout{
         text-decoration: none;
-        color:black;
+        color:blanchedalmond;
     }
     #LinkContact{
         text-decoration: none;
-        color:black;
+        color:blanchedalmond;
     }
     #LinkVideo{
         text-decoration: none;
-        color:black;
+        color:blanchedalmond;
     }
     #HLine{
-        height:10px;border-width:0;color:gray;background-color:black
+        height:10px;border-width:0;color:gray;background-color:blanchedalmond;
     }
-    .Intro{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 48px;
+    form{
+        font-size: 100px;
+    }
+    textarea{
+        white-space: 100px;
     }
     </style>
 </head>
@@ -53,18 +56,17 @@
     <a href="index.html" id="LinkHome">Home |</a> 
     <a href="about.html" id="LinkAbout">About |</a> 
     <a href="contact.html" id="LinkContact">Contact |</a>
-    <a href="video.html" id="LinkVideo">Videos</a>
+    <a href="video.html" id="LinkVideo">Videos |</a>
 </h2>
 </div>
 <hr class="HLine">
-<p class="Intro">
-    Hello, this is Faisal typing I am making this website to
-    practice my Html, Css and JavaScript. Anyway, if You want 
-    to know more about me I have put an <a href="about.html">About</a>
-    in the navigation bar.
-    Enjoy my beta website🤠!!!
-</p>
-<img src="video.gif" alt="code" width="1500px">
-<p class="Intro">I am going to go start building my official website👋</p>
-
+<form action="/Answer.html" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" name="fname"><br>
+    <label for="lname">Last name:</label>
+    <input type="text" name="lname"><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email"><br>
+    <input type="submit" value="Submit">
+  </form>
 </body>
